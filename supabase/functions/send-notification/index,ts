@@ -1,0 +1,55 @@
+import { serve } from 'https://deno.land/std@0.168.0/http/server.ts';
+
+const corsHeaders = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
+};
+
+serve(async (req) => {
+  // Handle CORS
+  if (req.method === 'OPTIONS') {
+    return new Response('ok', { headers: corsHeaders });
+  }
+
+  try {
+    const { customerName, customerEmail, plan, phone, transactionId, amount } = await req.json();
+
+    // Replace this email with your actual email address where you want to receive notifications
+    const adminEmail = 'your-email@example.com';
+
+    // Compose email content
+    const emailContent = `
+      New Membership Registration:
+      
+      Customer Name: ${customerName}
+      Email: ${customerEmail}
+      Phone: ${phone}
+      Selected Plan: ${plan}
+      Amount Paid: $${amount}
+      Transaction ID: ${transactionId}
+      
+      Please verify the payment and activate the membership.
+    `;
+
+    // In a real implementation, you would use an email service here
+    // For now, we'll just log the email content
+    console.log('Email would be sent to:', adminEmail);
+    console.log('Email content:', emailContent);
+
+    return new Response(
+      JSON.stringify({ message: 'Notification sent successfully' }),
+      {
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+        status: 200,
+      }
+    );
+  } catch (error) {
+    return new Response(
+      JSON.stringify({ error: error.message }),
+      {
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+        status: 400,
+      }
+    );
+  }
+});
