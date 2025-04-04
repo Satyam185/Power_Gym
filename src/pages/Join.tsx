@@ -59,7 +59,7 @@ export default function Join() {
       setLoading(true);
       setError(null);
       const paymentAmount = planPrices[formData.plan as keyof typeof planPrices];
-      
+
       // Simulate payment verification
       // In reality, this would be an API call to your payment processor
       const isPaymentValid = true; // Replace with actual verification
@@ -150,9 +150,9 @@ export default function Join() {
       {/* Payment Modal */}
       {showPayment && !paymentConfirmed && (
         <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
-          <div className="bg-gray-800 p-8 rounded-lg max-w-md w-full mx-4">
+          <div className="bg-gray-800 p-6 h-300 rounded-lg max-w-sm  mx-4">
             <h3 className="text-2xl font-bold text-white mb-4">Complete Payment</h3>
-            
+
             <div className="bg-gray-700 p-4 rounded-lg mb-6">
               <p className="text-gray-300 mb-2">Selected Plan: <span className="text-white font-semibold">{formData.plan}</span></p>
               <p className="text-gray-300">Amount to Pay: <span className="text-white font-semibold">₹{planPrices[formData.plan as keyof typeof planPrices]}</span></p>
@@ -161,13 +161,13 @@ export default function Join() {
             <p className="text-gray-300 mb-6">
               Please scan the QR code below to complete your payment. Make sure to send the exact amount shown above.
             </p>
-            
-            
+
+
             {/* QR Code placeholder - Replace src with actual QR code */}
             <div className="bg-white p-4 rounded-lg mb-6 flex justify-center">
-              <img src="src/components/QrCode.jpg" alt="" />
+              <img src="src/components/QrCode.jpg" alt="" className="w-20 h-20"  />
 
-</div>
+            </div>
 
             <div className="mb-6">
               <label htmlFor="transactionId" className="block text-sm font-medium text-gray-400 mb-2">
@@ -215,23 +215,21 @@ export default function Join() {
         </div>
       </div>
 
-       {/* Progress Steps */}
-       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* Progress Steps */}
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex justify-between items-center mb-8">
           {[1, 2, 3].map((num) => (
             <div key={num} className="flex items-center">
               <div
-                className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                  step >= num ? 'bg-red-500 text-white' : 'bg-gray-700 text-gray-400'
-                }`}
+                className={`w-8 h-8 rounded-full flex items-center justify-center ${step >= num ? 'bg-red-500 text-white' : 'bg-gray-700 text-gray-400'
+                  }`}
               >
                 {num}
               </div>
               {num < 3 && (
                 <div
-                  className={`h-1 w-24 ${
-                    step > num ? 'bg-red-500' : 'bg-gray-700'
-                  }`}
+                  className={`h-1 w-24 ${step > num ? 'bg-red-500' : 'bg-gray-700'
+                    }`}
                 />
               )}
             </div>
@@ -245,8 +243,8 @@ export default function Join() {
           </div>
         )}
 
-         {/* Form */}
-         <div className="bg-gray-800 rounded-lg p-8">
+        {/* Form */}
+        <div className="bg-gray-800 rounded-lg p-8">
           <form onSubmit={handleSubmit} className="space-y-6">
             {step === 1 && (
               <>
@@ -334,11 +332,10 @@ export default function Join() {
                   {['Basic', 'Premium', 'Elite'].map((planOption) => (
                     <label
                       key={planOption}
-                      className={`block p-4 rounded-lg border-2 cursor-pointer transition-colors ${
-                        formData.plan === planOption
+                      className={`block p-4 rounded-lg border-2 cursor-pointer transition-colors ${formData.plan === planOption
                           ? 'border-red-500 bg-gray-700'
                           : 'border-gray-600 bg-gray-700 hover:border-gray-500'
-                      }`}
+                        }`}
                     >
                       <input
                         type="radio"
