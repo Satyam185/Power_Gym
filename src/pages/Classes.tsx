@@ -20,17 +20,17 @@ const classes = [
     time: '8:00 AM - 9:00 AM',
     level: 'All Levels',
     description: 'Comprehensive chest workout including bench press, flyes, and push-ups for building upper body strength.',
-    image: 'src/components/IMG_4626.webp',
+    image: 'src/components/IMG_4626.jpg',
     exercises: [
       {
         name: 'Bench Press',
-        animation: 'src/components/IMG_4626.webp',
+        animation: 'src/components/IMG_4626.jpg',
         steps: ['Lie on bench', 'Grip bar slightly wider than shoulders', 'Lower bar to chest', 'Press up to starting position'],
         sets: '4 sets of 8-12 reps'
       },
       {
         name: 'Dumbbell Flyes',
-        animation: 'src/components/dumbbell-fly.webp',
+        animation: 'src/components/dumbbell-fly.jpg',
         steps: ['Lie on bench', 'Hold dumbbells above chest', 'Lower arms out to sides', 'Bring weights back together'],
         sets: '3 sets of 12-15 reps'
       }
@@ -89,7 +89,7 @@ const classes = [
     time: '3:00 PM - 4:00 PM',
     level: 'All Levels',
     description: 'Complete triceps workout for stronger, more defined arms.',
-    image: '/src/components/tricepblast.webp',
+    image: '/src/components/tricepblast.jpg',
     exercises: [
       {
         name: 'Tricep Pushdowns',
@@ -105,7 +105,7 @@ const classes = [
       },
       {
         name: 'Diamond Push-ups',
-        animation: 'src/components/Screenshot_2024-03-21_at_12.36.05_PM.webp',
+        animation: 'src/components/Screenshot_2024-03-21_at_12.36.05_PM.jpg',
         steps: ['Form diamond shape with hands', 'Lower chest to hands', 'Push back up', 'Keep elbows close'],
         sets: '3 sets of 12-15 reps'
       },
@@ -146,7 +146,7 @@ const classes = [
       },
       {
         name: 'Bulgarian Split Squats',
-        animation: 'src/components/Bulgarian_Split_Squats.webp',
+        animation: 'src/components/Bulgarian_Split_Squats.jpg',
         steps: ['Place rear foot on bench', 'Lower into split squat', 'Keep front knee aligned', 'Push back up'],
         sets: '3 sets of 12 reps each leg'
       }

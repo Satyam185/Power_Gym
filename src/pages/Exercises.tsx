@@ -58,7 +58,7 @@ const exercises: Exercise[] = [
     level: 'advanced',
     bodyPart: 'back',
     description: 'An advanced upper body exercise targeting back and biceps.',
-    animation: 'src/components/how-to-do-pull-ups-for-a-bigger-and-shredded-back.webp',
+    animation: 'src/components/how-to-do-pull-ups-for-a-bigger-and-shredded-back.jpg',
     instructions: [
       'Grip the bar with hands wider than shoulders',
       'Hang with arms fully extended',
