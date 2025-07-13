@@ -194,7 +194,7 @@ const classes = [
     time: '7:00 PM - 8:00 PM',
     level: 'All Levels',
     description: 'Targeted core workout for building strong, defined abs.',
-    image: 'public/images/core.jpg',
+    image: '/images/core.jpg',
     exercises: [
       {
         name: 'Planks',
