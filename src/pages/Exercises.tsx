@@ -58,7 +58,7 @@ const exercises: Exercise[] = [
     level: 'advanced',
     bodyPart: 'back',
     description: 'An advanced upper body exercise targeting back and biceps.',
-    animation: 'public/images/how-to-do-pull-ups-for-a-bigger-and-shredded-back.jpg',
+    animation: '/images/how-to-do-pull-ups-for-a-bigger-and-shredded-back.jpg',
     instructions: [
       'Grip the bar with hands wider than shoulders',
       'Hang with arms fully extended',
@@ -94,7 +94,7 @@ const exercises: Exercise[] = [
     level: 'intermediate',
     bodyPart: 'back',
     description: 'A compound exercise that targets the back muscles and improves posture.',
-    animation: 'public/images/one-tip-to-maximize-your-dumbbell-row-inset1-700xh.jpg',
+    animation: '/images/one-tip-to-maximize-your-dumbbell-row-inset1-700xh.jpg',
     instructions: [
       'Place one knee and hand on a bench',
       'Hold dumbbell with free hand',

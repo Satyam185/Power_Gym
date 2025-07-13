@@ -4,7 +4,7 @@ const AboutUs: React.FC = () => {
   return (
     <div
       className="relative bg-cover bg-center bg-no-repeat min-h-screen flex flex-col items-center justify-center py-10"
-      style={{ backgroundImage: "url('public/images/gymimage.jpg')" }}
+      style={{ backgroundImage: "url('/images/gymimage.jpg')" }}
     >
       {/* Black Overlay with Opacity */}
       <div className="absolute inset-0 bg-black bg-opacity-60"></div>
