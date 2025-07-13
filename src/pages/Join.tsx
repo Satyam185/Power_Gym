@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowRight, QrCode } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import { useNavigate } from 'react-router-dom';
 

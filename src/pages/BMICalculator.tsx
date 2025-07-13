@@ -38,7 +38,7 @@ const BMICalculator: React.FC = () => {
 
   return (
     <section className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat py-10 " 
-      style={{ backgroundImage: "url('src/components/Untitled design.jpg')"  }}>
+      style={{ backgroundImage: "url('public/images/Untitled design.jpg')"  }}>
       <h1 className="text-2xl font-bold mb-4 text-white">BMI CALCULATOR</h1>
       <div className="w-full max-w-3xl bg-black bg-opacity-50 shadow-lg rounded-lg p-6">
         <div className="flex flex-col items-center justify-center text-white">
@@ -86,7 +86,7 @@ const BMICalculator: React.FC = () => {
           </div>
         )}
         <div className="flex flex-col items-center justify-center mt-6">
-          <img src="src/components/bmiimage.jpg" alt="BMI Illustration" className="w-40 h-40 object-cover" />
+          <img src="public/images/bmiimage.jpg" alt="BMI Illustration" className="w-40 h-40 object-cover" />
         </div>
       </div>
       <ToastContainer />

@@ -20,17 +20,17 @@ const classes = [
     time: '8:00 AM - 9:00 AM',
     level: 'All Levels',
     description: 'Comprehensive chest workout including bench press, flyes, and push-ups for building upper body strength.',
-    image: 'src/components/IMG_4626.jpg',
+    image: 'public/images/IMG_4626.jpg',
     exercises: [
       {
         name: 'Bench Press',
-        animation: 'src/components/IMG_4626.jpg',
+        animation: 'public/images/IMG_4626.jpg',
         steps: ['Lie on bench', 'Grip bar slightly wider than shoulders', 'Lower bar to chest', 'Press up to starting position'],
         sets: '4 sets of 8-12 reps'
       },
       {
         name: 'Dumbbell Flyes',
-        animation: 'src/components/dumbbell-fly.jpg',
+        animation: 'public/images/dumbbell-fly.jpg',
         steps: ['Lie on bench', 'Hold dumbbells above chest', 'Lower arms out to sides', 'Bring weights back together'],
         sets: '3 sets of 12-15 reps'
       }
@@ -43,17 +43,17 @@ const classes = [
     time: '10:00 AM - 11:00 AM',
     level: 'Intermediate',
     description: 'Focus on building a stronger back with pull-ups, rows, and lat pulldowns.',
-    image: 'src/components/back-double-biceps.jpg',
+    image: 'public/images/back-double-biceps.jpg',
     exercises: [
       {
         name: 'Pull-ups',
-        animation: 'src/components/images.jpg',
+        animation: 'public/images/images.jpg',
         steps: ['Grip bar with hands wider than shoulders', 'Pull body up until chin over bar', 'Lower with control'],
         sets: '4 sets of 8-10 reps'
       },
       {
         name: 'Barbell Rows',
-        animation: 'src/components/one-tip-to-maximize-your-dumbbell-row-inset1-700xh.jpg',
+        animation: 'public/images/one-tip-to-maximize-your-dumbbell-row-inset1-700xh.jpg',
         steps: ['Bend at hips, keep back straight', 'Pull bar to lower chest', 'Lower with control'],
         sets: '3 sets of 10-12 reps'
       }
@@ -76,7 +76,7 @@ const classes = [
       },
       {
         name: 'Hammer Curls',
-        animation: 'src/components/OIP.jpg',
+        animation: 'public/images/OIP.jpg',
         steps: ['Hold dumbbells at sides', 'Curl up keeping palms facing each other', 'Lower with control'],
         sets: '3 sets of 12-15 reps'
       }
@@ -89,7 +89,7 @@ const classes = [
     time: '3:00 PM - 4:00 PM',
     level: 'All Levels',
     description: 'Complete triceps workout for stronger, more defined arms.',
-    image: '/src/components/tricepblast.jpg',
+    image: 'public/images/tricepblast.jpg',
     exercises: [
       {
         name: 'Tricep Pushdowns',
@@ -99,19 +99,19 @@ const classes = [
       },
       {
         name: 'Skull Crushers',
-        animation: 'src/components/OIP (2).jpg',
+        animation: 'public/images/OIP (2).jpg',
         steps: ['Lie on bench', 'Lower weight to forehead', 'Extend arms fully'],
         sets: '3 sets of 10-12 reps'
       },
       {
         name: 'Diamond Push-ups',
-        animation: 'src/components/Screenshot_2024-03-21_at_12.36.05_PM.jpg',
+        animation: 'public/images/Screenshot_2024-03-21_at_12.36.05_PM.jpg',
         steps: ['Form diamond shape with hands', 'Lower chest to hands', 'Push back up', 'Keep elbows close'],
         sets: '3 sets of 12-15 reps'
       },
       {
         name: 'Overhead Tricep Extensions',
-        animation: 'src/components/overhead-triceps-extension-main2.jpg',
+        animation: 'public/images/overhead-triceps-extension-main2.jpg',
         steps: ['Hold dumbbell overhead', 'Lower behind head', 'Extend arms fully', 'Keep elbows close'],
         sets: '3 sets of 12-15 reps'
       }
@@ -128,25 +128,25 @@ const classes = [
     exercises: [
       {
         name: 'Squats',
-        animation: 'src/components/OIP (3).jpg',
+        animation: 'public/images/OIP (3).jpg',
         steps: ['Stand with feet shoulder-width', 'Lower body keeping back straight', 'Push through heels to stand'],
         sets: '5 sets of 8-10 reps'
       },
       {
         name: 'Deadlifts',
-        animation: 'src/components/AdobeStock_382378953-TH.jpg',
+        animation: 'public/images/AdobeStock_382378953-TH.jpg',
         steps: ['Stand with feet hip-width', 'Hinge at hips to grip bar', 'Stand up straight'],
         sets: '4 sets of 6-8 reps'
       },
       {
         name: 'Leg Press',
-        animation: 'src/components/96f17a7fb2e9d7043882ceb39560ec2b.jpg',
+        animation: 'public/images/96f17a7fb2e9d7043882ceb39560ec2b.jpg',
         steps: ['Sit on machine', 'Place feet shoulder-width', 'Lower weight controlled', 'Push through heels'],
         sets: '4 sets of 10-12 reps'
       },
       {
         name: 'Bulgarian Split Squats',
-        animation: 'src/components/Bulgarian_Split_Squats.jpg',
+        animation: 'public/images/Bulgarian_Split_Squats.jpg',
         steps: ['Place rear foot on bench', 'Lower into split squat', 'Keep front knee aligned', 'Push back up'],
         sets: '3 sets of 12 reps each leg'
       }
@@ -163,25 +163,25 @@ const classes = [
     exercises: [
       {
         name: 'Military Press',
-        animation: 'src/components/militrypress.jpg',
+        animation: 'public/images/militrypress.jpg',
         steps: ['Stand with feet shoulder-width', 'Press bar overhead', 'Lower with control'],
         sets: '4 sets of 8-10 reps'
       },
       {
         name: 'Lateral Raises',
-        animation: 'src/components/lateralraises.jpg',
+        animation: 'public/images/lateralraises.jpg',
         steps: ['Stand with dumbbells at sides', 'Raise arms to shoulder level', 'Lower with control'],
         sets: '3 sets of 12-15 reps'
       },
       {
         name: 'Front Raises',
-        animation: 'src/components/frontcableraise.jpg',
+        animation: 'public/images/frontcableraise.jpg',
         steps: ['Hold dumbbells in front', 'Raise arms to shoulder height', 'Lower with control', 'Keep slight bend in elbows'],
         sets: '3 sets of 12-15 reps'
       },
       {
         name: 'Face Pulls',
-        animation: 'src/components/facepull.jpg',
+        animation: 'public/images/facepull.jpg',
         steps: ['Set cable at head height', 'Pull rope to face level', 'Squeeze shoulder blades', 'Control return'],
         sets: '3 sets of 15-20 reps'
       }
@@ -194,7 +194,7 @@ const classes = [
     time: '7:00 PM - 8:00 PM',
     level: 'All Levels',
     description: 'Targeted core workout for building strong, defined abs.',
-    image: '/src/components/core.jpg',
+    image: 'public/images/core.jpg',
     exercises: [
       {
         name: 'Planks',
@@ -204,7 +204,7 @@ const classes = [
       },
       {
         name: 'Russian Twists',
-        animation: 'src/components/russiantwist.jpg',
+        animation: 'public/images/russiantwist.jpg',
         steps: ['Sit with knees bent', 'Lean back slightly', 'Rotate torso side to side'],
         sets: '3 sets of 20 reps'
       }
@@ -282,9 +282,7 @@ export default function Classes() {
                 <p className="text-gray-400 mb-4">{cls.description}</p>
                 <div className="flex justify-between items-center">
                   <span className="text-gray-400">{cls.time}</span>
-                  <button className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition-colors">
-                    Book Now
-                  </button>
+              
                 </div>
               </div>
             </motion.div>
