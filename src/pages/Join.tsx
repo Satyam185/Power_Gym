@@ -165,7 +165,7 @@ export default function Join() {
 
             {/* QR Code placeholder - Replace src with actual QR code */}
             <div className="bg-white p-4 rounded-lg mb-6 flex justify-center">
-              <img src="src/components/QrCode.jpg" alt="" className="w-20 h-20"  />
+              <img src="/images/QrCode.jpg" alt="" className="w-20 h-20"  />
 
             </div>
 
